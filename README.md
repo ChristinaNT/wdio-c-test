@@ -24,7 +24,7 @@ OR
 npm test
 ```
 
-To Run alone in Chrome Browser Replace followinf block  
+To Run alone in Chrome Browse (90 + browser version please) Replace following block  
 ```
 capabilities: [{
     
@@ -70,4 +70,22 @@ capabilities: [{
  }
  ],
  
+
 ```
+
+To Run Firefox Headed Revoe the following attribute from `wdio.cof.js`
+
+```
+'moz:firefoxOptions': {
+      args: ['-headless'],
+    },
+
+```
+
+Jenkins File can be used to run on Jenkins.
+
+See screenhots
+![Screen Shot 2021-04-18 at 6 13 12 PM](https://user-images.githubusercontent.com/35588518/115162636-a6cb7680-a072-11eb-9f2f-b7eba2c9da6d.png)
+![Screen Shot 2021-04-18 at 6 13 33 PM](https://user-images.githubusercontent.com/35588518/115162637-a8953a00-a072-11eb-8151-dff7ff070193.png)
+![Screen Shot 2021-04-18 at 6 20 08 PM](https://user-images.githubusercontent.com/35588518/115162651-be0a6400-a072-11eb-8e82-c75894133567.png)
+
