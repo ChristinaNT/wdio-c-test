@@ -1,4 +1,4 @@
-## Local Dev Set Up
+## Setup
 
 Clone the repository
 ```
