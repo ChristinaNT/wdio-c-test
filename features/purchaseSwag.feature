@@ -2,9 +2,13 @@ Feature: Purchase Swag on Sauce Demo
 
   Scenario Outline: As a registered user, I can log in
     Given the browser is at the "Login" page
-    And I use credentials standard_user and secret_sauce
+    And I use valid credentials "<username>" and "<password>" to login
     When I submit to login
     Then Landed on the "Inventory" page
+
+    Examples:
+      | username      |password      |
+      | standard_user | secret_sauce |
 
   Scenario: As a logged user, I can sort items
     Given the browser is at the "Inventory" page
