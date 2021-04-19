@@ -1,10 +1,13 @@
 Feature: Purchase Swag on Sauce Demo
 
-  Scenario Outline: As a registered user, I can log in
+  Scenario Outline: As a registered user, I can log in with valid credentials; <username>
     Given the browser is at the "Login" page
-    And I use credentials standard_user and secret_sauce
+    And the user tries to use "valid" credentials, "<username>" to login
     When I submit to login
     Then Landed on the "Inventory" page
+    Examples:
+      | username      |
+      | standard_user |
 
   Scenario: As a logged user, I can sort items
     Given the browser is at the "Inventory" page
@@ -23,6 +26,7 @@ Feature: Purchase Swag on Sauce Demo
     When I look at the shopping cart list
     Then I can see my added items
 
+
   Scenario: As a logged user, I can remove items from the cart
     Given the browser is at the "Cart" page
     When I remove an item from the cart
@@ -32,6 +36,7 @@ Feature: Purchase Swag on Sauce Demo
     Given the browser is at the "Inventory" page
     When I add an item to the cart
     Then the cart count shows 2
+
 
   Scenario: As a logged user, I can checkout when I am ready
     Given I am logged in

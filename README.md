@@ -19,9 +19,6 @@ The test will run paralelly on Chrome Browser(make sure you have the latest Chro
 ```
 npx wdio wdio.conf.js
 
-OR
-
-npm test
 ```
 
 To Run alone in Chrome Browse (90 + browser version please) Replace following block  
