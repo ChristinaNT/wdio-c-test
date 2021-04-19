@@ -18,9 +18,11 @@ npm audit fix
 The test will run paralelly on Chrome Browser(make sure you have the latest Chrome Browser and) Nand in Firefox on headless mode
 ```
 npx wdio wdio.conf.js
+```
 
 OR
 
+```
 npm test
 ```
 
