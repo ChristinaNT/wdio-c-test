@@ -1,7 +1,7 @@
 const { expect } = require('chai');
 class Checkout {
     get url() {
-      return "/checkout-step-two.html";
+      return "https://www.saucedemo.com/checkout-step-two.html";
     }
     get fname() {
         return $("#first-name");

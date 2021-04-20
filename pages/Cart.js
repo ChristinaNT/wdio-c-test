@@ -1,7 +1,7 @@
 const { expect, assert } = require('chai');
 class Cart {
     get url() {
-      return "/cart.html";
+      return "https://www.saucedemo.com/cart.html";
     }
   
     itemsInCart(){

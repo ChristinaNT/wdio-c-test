@@ -4,7 +4,7 @@ chai.use(require('chai-sorted'));
 
 class Inventory {
     get url() {
-      return "/inventory.html";
+      return "https://www.saucedemo.com/inventory.html";
     }
   
     sortItems(order){
