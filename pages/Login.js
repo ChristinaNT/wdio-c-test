@@ -1,6 +1,6 @@
 class Login {
     get url() {
-      return "/";
+      return "https://www.saucedemo.com/";
     }
   
     get emailInput() {

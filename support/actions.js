@@ -10,7 +10,7 @@ const Actions = {
   }
   ,
   login: function () {
-    browser.url('/');
+    browser.url('https://www.saucedemo.com');
 
     this.inputText($('#user-name'), 'standard_user');
     this.inputText($('#password'), 'secret_sauce');
