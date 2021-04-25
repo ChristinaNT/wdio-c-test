@@ -3,21 +3,20 @@
 /* global $ */
 
 const { When } = require('@cucumber/cucumber');
+const Cart = require('../../pages/Cart');
 
 When('I click the shopping cart icon', () => {
-  $('.fa-shopping-cart').click();
+  Cart.clickCartIcon()
 });
 
 When('I look at the shopping cart list', () => {
-  $('.cart_list').waitForDisplayed(5000);
+ Cart.checkCartList()
 });
 
 When('I select the sorting dropdown', () => {
-  $('.product_sort_container').click();
+ Cart.clickSorter()
 });
 
-When('I select to sort by {} to {} price', (first, last) => {
-  const sort = first.slice(0, 2) + last.slice(0, 2);
-  
-  $(`option[value=${sort}]`).click();
+When('I select to sort by {} to {}', (first, last) => {
+  Cart.sortInventory(first,last)
 });

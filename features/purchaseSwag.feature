@@ -13,7 +13,7 @@ Feature: Purchase Swag on Sauce Demo
   Scenario: As a logged user, I can sort items
     Given the browser is at the "Inventory" page
     When I select the sorting dropdown
-    And I select to sort by lowest to highest price
+    And I select to sort by lowest to highest
     Then I should see items sorted in ascending price order
 
   Scenario: As a logged user, I can add items to the cart
