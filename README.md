@@ -40,12 +40,13 @@ npm test
 
 To Run alone in Chrome Browse (90 + browser version please) Replace following block  
 ```
+maxInstances: 2,
 capabilities: [{
     
    // maxInstances can get overwritten per capability. So if you have an in-house Selenium
    // grid with only 5 firefox instances available you can make sure that not more than
    // 5 instances get started at a time.
-   maxInstances: 5,
+   maxInstances: 1,
    //
    browserName: 'chrome',
    acceptInsecureCerts: true
@@ -60,7 +61,7 @@ capabilities: [{
  },
  {
    browserName: 'firefox',
-   maxInstances: 5,
+   maxInstances: 1,
    acceptInsecureCerts: true,
    'moz:firefoxOptions': {
       args: ['-headless'],
@@ -77,10 +78,10 @@ capabilities: [{
    // maxInstances can get overwritten per capability. So if you have an in-house Selenium
    // grid with only 5 firefox instances available you can make sure that not more than
    // 5 instances get started at a time.
-   maxInstances: 5,
+   maxInstances: 2,
    //
    browserName: 'chrome',
-   maxInstances: 5
+   maxInstances: 1
  }
  ],
  
